@@ -1,0 +1,234 @@
+/*
+|====================================
+| CSS root
+|====================================
+*/
+
+:root {
+  --color-white: #ffffff;
+  --color-iris: #4d5ae5;
+  --color-slate: #434455;
+  --color-cloud: #f4f4fd;
+  --color-navy-blue: #2e2f42;
+}
+
+/*
+|====================================
+| Base styles 
+|====================================
+*/
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: var(--color-slate);
+  background-color: var(--color-white);
+}
+
+.link {
+  text-decoration: none;
+  font-style: normal;
+}
+
+.list {
+  list-style-type: none;
+}
+
+/*
+|====================================
+| Header section
+|====================================
+*/
+
+.logo-header {
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-size: 18px;
+  line-height: 1.17;
+  font-weight: 800;
+  color: var(--color-iris);
+}
+
+.logo-word {
+  color: var(--color-navy-blue);
+}
+
+.header-nav {
+  color: var(--color-navy-blue);
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.header-nav:hover,
+.header-adress:hover,
+.header-nav:focus,
+.header-adress:focus {
+  color: #404bbf;
+}
+
+.header-adress {
+  color: var(--color-slate);
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  font-style: normal;
+}
+
+/*
+|====================================
+| Footer section
+|====================================
+*/
+
+.footer-back {
+  background-color: var(--color-navy-blue);
+}
+
+.footer-text {
+  color: var(--color-cloud);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.footer-logo {
+  color: var(--color-iris);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-size: 18px;
+  line-height: 1.17;
+}
+
+.footer-logo-word {
+  color: var(--color-cloud);
+}
+
+/*
+|====================================
+| Index.html
+|====================================
+*/
+
+/*
+|====================================
+| Hero section
+|====================================
+*/
+
+.hero {
+  background-color: var(--color-navy-blue);
+}
+
+.title-hero {
+  font-size: 56px;
+  color: var(--color-white);
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.02em;
+  line-height: 1.07;
+}
+
+.button-index {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  background-color: var(--color-iris);
+  border: none;
+  letter-spacing: 0.04em;
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+.button-index:hover,
+.button-index:focus {
+  background-color: #404bbf;
+}
+
+/*
+|====================================
+| Benefits section
+|====================================
+*/
+
+.text-benefits {
+  color: var(--color-slate);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.title-offer,
+.title-team {
+  font-size: 36px;
+  letter-spacing: 0.02em;
+  font-weight: 700;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--color-navy-blue);
+}
+
+.title-benefits {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  color: var(--color-navy-blue);
+}
+
+.team-list {
+  background-color: var(--color-white);
+}
+
+.section-team {
+  background-color: #f4f4fd;
+  color: var(--color-navy-blue);
+}
+
+.text-team {
+  color: var(--color-slate);
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+}
+
+/*
+|====================================
+| Portfolio.html
+|====================================
+*/
+
+.button-portfolio {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  border: 1px solid;
+  border-color: #e7e9fc;
+  background-color: var(--color-cloud);
+  color: #4d5ae5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.button-portfolio:hover,
+.button-portfolio:focus {
+  color: var(--color-white);
+  background-color: #404bbf;
+}
+
+.photo-title {
+  color: var(--color-navy-blue);
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.photo-text {
+  color: var(--color-slate);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
