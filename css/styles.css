@@ -151,17 +151,18 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   display: flex;
-  width: 264px;
+  max-width: 264px;
 }
 
-.footer-logo-text {
+.footer-container {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  padding-top: 100px;
+  padding: 100px 0;
 }
 
 .footer-logo {
+  display: inline-block;
   color: var(--color-iris);
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
@@ -190,7 +191,6 @@ ul {
 .hero {
   background-color: var(--color-navy-blue);
   height: 600px;
-  margin-bottom: 120px;
 }
 
 .title-hero {
@@ -204,7 +204,10 @@ ul {
   text-align: center;
   letter-spacing: 0.02em;
   line-height: 1.07;
-  padding-top: 188px;
+}
+
+.hero-container {
+  padding: 188px 0px;
 }
 
 .button-index {
@@ -225,7 +228,6 @@ ul {
   margin-right: auto;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   margin-top: 48px;
-  margin-bottom: 188px;
 }
 
 .button-index:hover,
@@ -246,8 +248,33 @@ ul {
 }
 
 .benefits-section {
-  margin: 120px;
+  padding: 120px 0;
 }
+
+.benefits-list-item {
+  flex-basis: calc((100% - 3 * 24px) / 4);
+}
+
+.benefits-list {
+  display: flex;
+  gap: 24px;
+  padding: 0px;
+}
+
+.title-benefits {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  color: var(--color-navy-blue);
+  margin-bottom: 8px;
+}
+
+/*
+|====================================
+| Offer section
+|====================================
+*/
 
 .title-offer {
   font-size: 36px;
@@ -260,36 +287,24 @@ ul {
   padding-bottom: 72px;
 }
 
-.benefits-list-item {
-  flex-basis: calc((100% - 24px * 3) / 4);
-}
-
-.benefits-list {
-  display: flex;
-  gap: 24px;
-}
-
-.title-benefits {
-  font-size: 20px;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  line-height: 1.2;
-  color: var(--color-navy-blue);
-}
-
-.section-team {
-  background-color: #f4f4fd;
-  color: var(--color-navy-blue);
-}
-
 .offer-list {
   display: flex;
   gap: 24px;
 }
 
 .offer-section {
-  margin-bottom: 120px;
+  padding-bottom: 120px;
 }
+
+.offer-list-item {
+  border: 1px solid rgba(231, 233, 252, 1);
+}
+
+/*
+|====================================
+| Team section
+|====================================
+*/
 
 .title-team {
   font-size: 36px;
@@ -300,11 +315,12 @@ ul {
   text-transform: capitalize;
   color: var(--color-navy-blue);
   padding-bottom: 72px;
-  padding-top: 120px;
 }
 
-.offer-list-item {
-  border: 1px solid rgba(231, 233, 252, 1);
+.section-team {
+  background-color: #f4f4fd;
+  color: var(--color-navy-blue);
+  padding: 120px 0;
 }
 
 .text-team {
@@ -316,7 +332,6 @@ ul {
 .team-list {
   display: flex;
   gap: 24px;
-  padding-bottom: 120px;
 }
 
 .team-list-item {
