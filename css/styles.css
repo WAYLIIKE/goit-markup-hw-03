@@ -291,6 +291,7 @@ ul {
 .offer-list {
   display: flex;
   gap: 24px;
+  padding: 0;
 }
 
 .offer-section {
@@ -335,6 +336,7 @@ ul {
 .team-list {
   display: flex;
   gap: 24px;
+  padding: 0;
 }
 
 .team-list-item {
@@ -392,7 +394,7 @@ ul {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .photo-text {
@@ -417,7 +419,7 @@ ul {
 
 .portfolio-list-item {
   flex-basis: calc((100% - 24px * 2) / 3);
-  border: 1px solid rgba(231, 233, 252, 1);
+  border: 1px solid #e7e9fc;
 }
 
 .portfolio-photo-content {
