@@ -113,6 +113,7 @@ ul {
   line-height: 1.5;
   font-weight: 500;
   display: block;
+  padding: 24px 0;
 }
 
 .nav-list-item:hover,
