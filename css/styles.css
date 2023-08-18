@@ -40,6 +40,7 @@ h6,
 p,
 ul {
   margin: 0;
+  padding: 0;
 }
 
 .link {
@@ -98,30 +99,43 @@ ul {
   color: var(--color-navy-blue);
 }
 
-.header-nav {
-  color: var(--color-navy-blue);
+.nav-list {
   letter-spacing: 0.02em;
   line-height: 1.5;
   font-weight: 500;
   display: flex;
   gap: 40px;
-  padding: 24px 0;
 }
 
-.header-nav:hover,
-.header-adress:hover,
-.header-nav:focus,
-.header-adress:focus {
+.nav-list-item {
+  color: var(--color-navy-blue);
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  font-weight: 500;
+  display: block;
+}
+
+.nav-list-item:hover,
+.header-adress-item:hover,
+.nav-list-item:focus,
+.header-adress-item:focus {
   color: #404bbf;
 }
 
-.header-adress {
-  color: var(--color-slate);
+.header-adress-list {
   letter-spacing: 0.02em;
   line-height: 1.5;
   font-style: normal;
   display: flex;
   gap: 40px;
+}
+
+.header-adress-item {
+  color: var(--color-slate);
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  font-style: normal;
+  display: block;
 }
 
 .header-container {
@@ -150,7 +164,6 @@ ul {
   color: var(--color-cloud);
   line-height: 1.5;
   letter-spacing: 0.02em;
-  display: flex;
   max-width: 264px;
 }
 
@@ -188,7 +201,6 @@ ul {
 }
 
 .title-hero {
-  display: flex;
   max-width: 496px;
   margin-left: auto;
   margin-right: auto;
@@ -259,7 +271,7 @@ ul {
   font-weight: 500;
   letter-spacing: 0.02em;
   line-height: 1.2;
-  text-align: center;
+  align-items: flex-start;
   color: var(--color-navy-blue);
   margin-bottom: 8px;
 }
@@ -292,7 +304,6 @@ ul {
 }
 
 .offer-list-item {
-  border: 1px solid rgba(231, 233, 252, 1);
   flex-basis: calc((100% - 3 * 16px) / 3);
 }
 
@@ -311,6 +322,16 @@ ul {
   text-transform: capitalize;
   color: var(--color-navy-blue);
   margin-bottom: 72px;
+}
+
+.title-team-list {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--color-navy-blue);
+  margin-bottom: 8px;
 }
 
 .section-team {
@@ -341,11 +362,7 @@ ul {
 }
 
 .team-photo-content {
-  display: flex;
   padding: 32px 0;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
 }
 
 /*
